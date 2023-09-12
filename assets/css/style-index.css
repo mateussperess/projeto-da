@@ -10,16 +10,340 @@
   padding: 0;
 }
 
-@media(min-width: 320px) and (max-width: 640px) 
+body 
+{
+  background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png);
+  background-position: center;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+@media(min-width: 320px) and (max-width: 768px) 
 {
   body 
   {
-    background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png);
-    background-position: center;
-
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
     background-blend-mode: multiply; /* Mistura de cores para escurecer */
+  }
 
+  header 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 18rem;
+    gap: 3rem;
+  }
+
+  .divisor 
+  {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  header .title 
+  {
+    font-family: Playfair Display;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  header .subtitle
+  {
+    font-family: Poppins;
+    font-size: 1.25rem;
+  }
+
+ section 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  width: 100%;
+ }
+
+ section .form-area
+ {
+  width: 80%;
+  height: 14rem;
+ }
+
+ section .form-area .input-box 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ section .form-area .input-box input 
+ {
+  font-family: Poppins;
+  /* margin: 1rem; */
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  height: 3rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  padding: 10px;
+  
+  margin-block: 1rem;
+ }
+
+ section .form-area .input-box input:focus
+ {
+  background-color: #f2f2f2; 
+  color: #000000;
+ }
+
+ section form button:nth-child(3)
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #BF0426;
+  color: white;
+  margin-block: 1rem;
+ }
+
+ section .form-area .addons 
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+ section .form-area .addons span 
+ {
+  margin-block: 0.4rem;
+  text-align: center;
+ }
+
+ section .form-area .addons span a 
+ {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+ }
+
+ section .form-area .addons .linkRegister
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #f27141;
+  border-radius: 11px;
+
+  margin-block: 1rem;
+ }
+
+ section .form-area .addons .linkRegister a 
+ {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+}
+
+@media (min-width:768px) and (max-width: 1024px) 
+{
+  body 
+  {
+    display: grid;
+    grid-template-columns: 520px;
+    gap: 20px;
+    max-width: 32.5rem;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    background-blend-mode: multiply;
+
+    /* background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png); */
+  }
+
+  header 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 18rem;
+    gap: 3rem;
+  }
+
+  .divisor 
+  {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  header .title 
+  {
+    font-family: Playfair Display;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  header .subtitle
+  {
+    font-family: Poppins;
+    font-size: 1.25rem;
+  }
+
+ section 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  width: 100%;
+ }
+
+ section .form-area
+ {
+  width: 80%;
+  height: 14rem;
+ }
+
+ section .form-area .input-box 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ section .form-area .input-box input 
+ {
+  font-family: Poppins;
+  /* margin: 1rem; */
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  height: 3rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  padding: 10px;
+  
+  margin-block: 1rem;
+ }
+
+ section .form-area .input-box input:focus
+ {
+  background-color: #f2f2f2; 
+  color: #000000;
+ }
+
+ section form button:nth-child(3)
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #BF0426;
+  color: white;
+  margin-block: 1rem;
+ }
+
+ section .form-area .addons 
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+ section .form-area .addons span 
+ {
+  margin-block: 0.4rem;
+  text-align: center;
+ }
+
+ section .form-area .addons span a 
+ {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+ }
+
+ section .form-area .addons .linkRegister
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #f27141;
+  border-radius: 11px;
+
+  margin-block: 1rem;
+ }
+
+ section .form-area .addons .linkRegister a 
+ {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+}
+
+@media(min-width:1024px) 
+{
+  body 
+  {
+    display: grid;
+    grid-template-columns: 520px;
+    gap: 20px;
+    max-width: 32.5rem;
+    /* background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png); */
   }
 
   header 
