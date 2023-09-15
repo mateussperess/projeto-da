@@ -14,8 +14,11 @@ body
 {
   background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png);
   background-position: center;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  background-blend-mode: multiply; /* Mistura de cores para escurecer */
 }
 
 @media(min-width: 320px) and (max-width: 768px) 
