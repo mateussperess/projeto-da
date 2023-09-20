@@ -1,4 +1,4 @@
-/*****************/
+/****************/
 /* 1 REM = 16 px */
 /*****************/
 
@@ -126,6 +126,25 @@ body
   margin-block: 1rem;
  }
 
+ section form .addons button 
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #f27141;
+  color: white;
+  margin-block: 1rem;
+ }
+
  section .form-area .addons 
  {
   display: flex;
@@ -150,30 +169,6 @@ body
   text-decoration: none;
   font-weight: 600;
  }
-
- section .form-area .addons .linkRegister
- {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 4rem;
-  background-color: #f27141;
-  border-radius: 11px;
-
-  margin-block: 1rem;
- }
-
- section .form-area .addons .linkRegister a 
- {
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
- }
 }
 
 @media (min-width:768px) and (max-width: 1024px) 
@@ -188,7 +183,6 @@ body
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
     background-blend-mode: multiply;
 
-    /* background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png); */
   }
 
   header 
@@ -271,6 +265,8 @@ body
 
  section form button:nth-child(3)
  {
+  transition: 0.2s;
+
   height: 4rem;
   width: 100%;
 
@@ -284,6 +280,25 @@ body
   text-transform: uppercase;
 
   background-color: #BF0426;
+  color: white;
+  margin-block: 1rem;
+ }
+
+ section form .addons button 
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #f27141;
   color: white;
   margin-block: 1rem;
  }
@@ -311,30 +326,6 @@ body
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
- }
-
- section .form-area .addons .linkRegister
- {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 4rem;
-  background-color: #f27141;
-  border-radius: 11px;
-
-  margin-block: 1rem;
- }
-
- section .form-area .addons .linkRegister a 
- {
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
  }
 }
 
@@ -429,6 +420,8 @@ body
 
  section form button:nth-child(3)
  {
+  transition: 0.2s;
+
   height: 4rem;
   width: 100%;
 
@@ -442,6 +435,25 @@ body
   text-transform: uppercase;
 
   background-color: #BF0426;
+  color: white;
+  margin-block: 1rem;
+ }
+
+ section form .addons button 
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #f27141;
   color: white;
   margin-block: 1rem;
  }
@@ -470,30 +482,25 @@ body
   text-decoration: none;
   font-weight: 600;
  }
-
- section .form-area .addons .linkRegister
- {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 4rem;
-  background-color: #f27141;
-  border-radius: 11px;
-
-  margin-block: 1rem;
- }
-
- section .form-area .addons .linkRegister a 
- {
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
- }
 }
 
-/*  */
+/*****************/
+/*    HOVERS     */
+/*****************/
+
+section form button:nth-child(3):hover
+{
+  transition: 0.2s;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  background-color: #d60027;
+  color: white;
+  margin-block: 1rem;
+}
+
+section form .addons button:hover
+{
+ transition: 0.2s;
+ cursor: pointer;
+ background-color: #fd6832;
+}
