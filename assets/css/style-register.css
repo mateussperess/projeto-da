@@ -12,7 +12,7 @@
 
 body 
 {
-  background-image: url(../img/jose-tebar-NmyO_WHuMh0-unsplash\ 1.png);
+  background-image: url(../img/lasse-bergqvist-TYj7ey6xn9M-unsplash\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -154,9 +154,141 @@ body
  }
 }
 
-@media (min-width:768px) and (max-width: 1024px) 
+@media (min-width:768px)
 {
 
+  .container 
+  {
+    display: grid;
+    grid-template-columns: 520px;
+    /* height: 100%; */
+    gap: 20px;
+    max-width: 32.5rem;
+    padding: 20px;
+
+    /* background: linear-gradient(180deg, #F27141 0%, #BF0426 100%); */
+    /* height: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* max-width: 32.5rem; */
+
+  }
+
+  header
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 18rem;
+    /* margin-block: 1rem; */
+    gap: 0.5rem;
+  }
+
+  header .title 
+  {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  header .subtitle
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  section 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    width: 100%;
+  }
+
+  section .form-area
+ {
+  width: 80%;
+  height: 14rem;
+ }
+
+ section .form-area .input-box 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ section .form-area .input-box input 
+ {
+  font-family: Poppins;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 11px;
+  height: 3rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  margin-block: 1rem;
+ }
+
+ section .form-area .input-box input:focus
+ {
+  background-color: #f2f2f2; 
+  color: #000000;
+ }
+
+ .form-area .addons
+ {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 0.6rem;
+   
+   /* align-items: center; */
+ } 
+
+ .form-area .addons span 
+ {
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  color: white;
+ }
+
+ .form-area button 
+ {
+  height: 4rem;
+  width: 100%;
+
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #f27141;
+  color: white;
+  margin-block: 1rem;
+ }
 }
 
 @media(min-width:1024px) 
