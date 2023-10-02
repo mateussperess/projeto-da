@@ -14,8 +14,10 @@ body
 {
   background-image: url(../img/lasse-bergqvist-TYj7ey6xn9M-unsplash\ 1.png);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5); 
   /* Cor de fundo semi-transparente */
   background-blend-mode: multiply;
