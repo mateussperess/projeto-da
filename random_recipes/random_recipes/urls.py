@@ -24,5 +24,5 @@ urlpatterns = [
   # URL principal: randomrecipes.com
   path('', views.home, name = 'home'),
   path('users/login', views.login, name = 'login'),
-  path('users/register/', views.register, name = "register")
+  path('users/register/', views.register, name = "save_user")
 ]

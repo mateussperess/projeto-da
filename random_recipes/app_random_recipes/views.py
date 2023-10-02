@@ -13,9 +13,11 @@ def register(request):
   return render(request, 'users/register.html')
 
 
-def usuarios(request):
+def save(request):
   # Salvando dados da tela no banco de dados
   new_user = User()
   new_user.email = request.POST.get('email')
   new_user.password = request.POST.get('password')
   new_user.save()
+
+  return(new_user)
