@@ -417,7 +417,7 @@ body
  }
 
  section form button:nth-child(3)
- {
+{
   transition: 0.2s;
 
   height: 4rem;

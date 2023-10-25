@@ -1,23 +1,25 @@
 from django.shortcuts import render
-from .models import User
+from django.http import HttpResponse
+# from .models import User
+from rest_framework.views import APIView
 
 # Create your views here.
 
 def home(request):
   return render(request, 'home.html')
 
-def login(request):
-  return render(request, 'users/login.html')
+class Login(APIView):
+    def get(self, request, format=None):
+        return render(request, 'users/login.html')
 
-def register(request):
-  return render(request, 'users/register.html')
-
-
-def save(request):
-  # Salvando dados da tela no banco de dados
-  new_user = User()
-  new_user.email = request.POST.get('email')
-  new_user.password = request.POST.get('password')
-  new_user.save()
-
-  return(new_user)
+    def post(self, request, format=None):
+      return HttpResponse(request.POST.get('email'))
+    
+    # def register(request):
+    #   return render(request, 'users/register.html')
+class Register(APIView):
+   def get(self, request, format=None):
+      return render(request, 'users/register.html')
+   
+   def post(self, request, format=None):
+      return HttpResponse(request.POST.get('email'))

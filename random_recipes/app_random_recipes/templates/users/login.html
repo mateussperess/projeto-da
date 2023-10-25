@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Random Recipes - Login </title>
 
-  <link rel="stylesheet" href="../static/css/style-login.css">
-  <link rel="shortcut icon" href="../static/img/logos/Random Recipes.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../static/css/style-login.css">
+  <link rel="shortcut icon" href="../../static/img/logos/Random Recipes.png" type="image/x-icon">
   
 </head>
 <body>
@@ -23,15 +23,15 @@
     <section>
 
       <div class="form-area">
-        <form action="">
-
-          <div class="input-box">
+        <form action="{% url 'app_random_recipes:login' %}" method="POST">
+        {% csrf_token %}
+        <div class="input-box">
             <!-- <label for="">email: </label> -->
-            <input placeholder="Email:" type="email" name="email" id="emailInput" required>
+            <input placeholder="Email:" type="email" name="email" id="emailInput" value="mateus@gmail.com" required>
           </div>
           <div class="input-box">
             <!-- <label for="">senha: </label> -->
-            <input placeholder="Senha:" type="password" name="password" id="passwordInput" required>
+            <input placeholder="Senha:" type="password" name="password" id="passwordInput" value="12345678" required>
           </div>
 
           <button type="submit"> login </button>
@@ -49,6 +49,10 @@
     </section>
 
   </div>
-  <script src="../static/js/script.js"></script>
+  <script>
+    document.getElementById("register_page").onclick =  function() {
+      location.href = "{% url 'app_random_recipes:register' %}"
+    }
+  </script>
 </body>
 </html>
