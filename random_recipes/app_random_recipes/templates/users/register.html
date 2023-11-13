@@ -25,7 +25,8 @@
     <section>
 
       <div class="form-area">
-        <form action="{% url 'app_random_recipes:register' %}">
+        <form action="{% url 'app_random_recipes:register' %}" method="POST">
+          {% csrf_token %}
 
           <div class="input-box">
             <!-- <label for="">email: </label> -->

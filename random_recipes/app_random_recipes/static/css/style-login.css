@@ -21,7 +21,7 @@ body
   background-blend-mode: multiply; /* Mistura de cores para escurecer */
 }
 
-@media(min-width: 320px) and (max-width: 768px) 
+@media(min-width: 320px) and (max-width: 767px) 
 {
   body 
   {
@@ -107,7 +107,7 @@ body
   color: #000000;
  }
 
- section form button:nth-child(3)
+ section form button[type=submit]
  {
   height: 4rem;
   width: 100%;
@@ -327,7 +327,7 @@ body
  }
 }
 
-@media(min-width:1024px) 
+@media(min-width:769px) 
 {
   body 
   {
@@ -416,13 +416,10 @@ body
   color: #000000;
  }
 
- section form button:nth-child(3)
-{
+ .btn_login{
   transition: 0.2s;
-
   height: 4rem;
   width: 100%;
-
   border-radius: 11px;
   border: none;
   outline: none;
@@ -431,7 +428,6 @@ body
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   background-color: #BF0426;
   color: white;
   margin-block: 1rem;
@@ -441,6 +437,7 @@ body
  {
   height: 4rem;
   width: 100%;
+  transition: 0.2s;
 
   border-radius: 11px;
   border: none;
@@ -486,19 +483,23 @@ body
 /*    HOVERS     */
 /*****************/
 
-section form button:nth-child(3):hover
+section button:hover
 {
-  transition: 0.2s;
-  letter-spacing: 0.2rem;
-  cursor: pointer;
   background-color: #d60027;
-  color: white;
-  margin-block: 1rem;
+  letter-spacing: 0.2rem;
 }
 
 section form .addons button:hover
 {
- transition: 0.2s;
- cursor: pointer;
  background-color: #fd6832;
+ letter-spacing: 0.2rem;
+
+}
+
+button:hover 
+{
+  transition: 0.2s;
+  cursor: pointer;
+  margin-block: 1rem;
+  color: white;
 }

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# from .models import User
+from .models import User
 from rest_framework.views import APIView
 
 # Create your views here.
